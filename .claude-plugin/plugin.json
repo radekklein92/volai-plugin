@@ -1,0 +1,20 @@
+{
+  "name": "volai",
+  "version": "1.0.0",
+  "description": "Czech telephony API and MCP for apps and AI agents - numbers, calls, SMS, voice agent.",
+  "author": {
+    "name": "volai",
+    "url": "https://volai.cz"
+  },
+  "homepage": "https://volai.cz",
+  "license": "MIT",
+  "keywords": [
+    "telephony",
+    "phone-calls",
+    "sms",
+    "voice-agent",
+    "mcp-server",
+    "czech",
+    "twilio-alternative"
+  ]
+}

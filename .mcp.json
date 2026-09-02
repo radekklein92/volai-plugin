@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "volai": {
+      "type": "http",
+      "url": "https://volai.cz/mcp",
+      "headers": {
+        "Authorization": "Bearer ${VOLAI_API_KEY}"
+      }
+    }
+  }
+}
