@@ -19,6 +19,7 @@ one MCP server, billed per second in CZK.
 | --- | --- |
 | `.mcp.json` | MCP server config, drop into any MCP-compatible client |
 | `.claude-plugin/plugin.json` | Claude Code plugin manifest |
+| `gemini-extension.json` | Gemini CLI extension manifest (same remote MCP server) |
 | `skills/volai/SKILL.md` | Full API and MCP reference for AI agents |
 | `examples/make-call.mjs` | Minimal Node.js script that places a trial voice-agent call over the REST API |
 | `examples/send-sms.mjs` | Minimal Node.js script that sends an SMS over the REST API |
@@ -28,11 +29,26 @@ one MCP server, billed per second in CZK.
 volai's MCP server is remote (streamable HTTP) - there is nothing to
 build or run locally.
 
-### Claude Code
+### Claude Code (plugin with the bundled skill)
+
+```bash
+claude plugin marketplace add https://volai.cz/.claude-plugin/marketplace.json
+claude plugin install volai@volai
+export VOLAI_API_KEY=vk_YOUR_KEY
+```
+
+### Claude Code (MCP server only)
 
 ```bash
 claude mcp add --transport http volai https://volai.cz/mcp \
   --header "Authorization: Bearer vk_YOUR_KEY"
+```
+
+### Gemini CLI
+
+```bash
+gemini extensions install https://github.com/radekklein92/volai-plugin
+export VOLAI_API_KEY=vk_YOUR_KEY
 ```
 
 ### Cursor, Windsurf and other MCP clients
@@ -54,9 +70,13 @@ this repo):
 }
 ```
 
+Per-client walkthroughs (Cursor, Windsurf, Claude Desktop, n8n, Make,
+Lovable): [volai.cz/en/integrations](https://volai.cz/en/integrations).
+
 Get `vk_YOUR_KEY` in the volai portal under **API and MCP**
 ([volai.cz/en/api-and-mcp](https://volai.cz/en/api-and-mcp)) after
 signing up at [volai.cz/en/auth/signup](https://volai.cz/en/auth/signup).
+Treat the key like a password - anyone who has it can spend your credit.
 
 31 tools cover phone numbers, outbound and inbound calls, SMS, voice
 agents and webhooks. Full tool list: [`skills/volai/SKILL.md`](./skills/volai/SKILL.md).
