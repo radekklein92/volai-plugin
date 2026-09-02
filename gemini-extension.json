@@ -1,0 +1,13 @@
+{
+  "name": "volai",
+  "version": "1.0.0",
+  "description": "Czech telephony API and MCP for apps and AI agents - numbers, calls, SMS, voice agent.",
+  "mcpServers": {
+    "volai": {
+      "httpUrl": "https://volai.cz/mcp",
+      "headers": {
+        "Authorization": "Bearer $VOLAI_API_KEY"
+      }
+    }
+  }
+}
