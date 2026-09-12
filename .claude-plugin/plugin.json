@@ -1,7 +1,7 @@
 {
   "name": "volai",
-  "version": "1.0.0",
-  "description": "Czech telephony API and MCP for apps and AI agents - numbers, calls, SMS, voice agent.",
+  "version": "1.12.0",
+  "description": "Czech telephony API and MCP for apps and AI agents - numbers, calls, SMS, voice agent, connected calendars and invoices.",
   "author": {
     "name": "volai",
     "url": "https://volai.cz"

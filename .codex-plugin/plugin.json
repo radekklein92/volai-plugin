@@ -1,0 +1,44 @@
+{
+  "name": "volai",
+  "version": "1.12.0",
+  "description": "Manage phone numbers, AI voice agents, calls, SMS, calendars and invoices through your volai account.",
+  "author": {
+    "name": "ANOVIA Finance s.r.o.",
+    "email": "podpora@volai.cz",
+    "url": "https://volai.cz"
+  },
+  "homepage": "https://volai.cz/en/docs/mcp",
+  "repository": "https://github.com/radekklein92/volai-plugin",
+  "license": "MIT",
+  "keywords": [
+    "telephony",
+    "voice",
+    "sms",
+    "mcp",
+    "czech"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "volai",
+    "shortDescription": "Phone calls, SMS and AI voice agents",
+    "longDescription": "Connect your volai account to manage phone numbers and voice agents, review calls and messages, work with connected calendars and invoices, and start calls or send SMS when requested. Calls, SMS and number orders use your volai credit. Sign in through OAuth and revoke access at any time in the volai portal.",
+    "developerName": "ANOVIA Finance s.r.o.",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://volai.cz",
+    "privacyPolicyURL": "https://volai.cz/en/legal/privacy",
+    "termsOfServiceURL": "https://volai.cz/en/legal/terms",
+    "defaultPrompt": [
+      "Show my recent calls and messages.",
+      "Review my voice agent before publishing changes.",
+      "Check my volai credit and connected phone numbers."
+    ],
+    "brandColor": "#FF804E",
+    "composerIcon": "./assets/mark.svg",
+    "logo": "./assets/mark.svg"
+  }
+}
