@@ -2,7 +2,7 @@
 
 Czech telephony API and MCP for apps and AI agents - numbers, calls, SMS,
 voice agent. This plugin connects Codex and Claude Code to the volai MCP server
-(75 tools: numbers, calls, SMS, voice agents, webhooks, connected calendars
+(107 tools: numbers, calls, SMS, voice agents, webhooks, connected calendars
 and invoices) and bundles the full `volai` skill so Claude knows the API
 conventions (E.164 numbers, prices in Czech hellers, idempotency keys)
 without extra prompting.
@@ -53,7 +53,7 @@ who has it can spend your credit (buy numbers, place calls, send SMS).
 
 ## What you get
 
-- **MCP server** (`https://volai.cz/mcp`) - the same 75 tools documented at
+- **MCP server** (`https://volai.cz/mcp`) - the same 107 tools documented at
   `https://volai.cz/en/docs/mcp`, authenticated through OAuth or an API key.
 - **`volai` skill** (`skills/volai/SKILL.md`) - the full API reference
   (authentication, conventions, endpoints, tool list) so Claude picks the
@@ -70,6 +70,15 @@ Once installed, just ask Claude Code things like:
 - "Call me at +420777123456 and try being a cafe receptionist - I don't
   want to set up my own number or agent for this."
 - "List my last 10 calls and summarize them."
+
+## Source and registry
+
+The source of this plugin is public at
+`https://github.com/radekklein92/volai-plugin`, a mirror of the `plugin/`
+folder of the volai project. The MCP server is also listed in the official
+MCP registry as `cz.volai/volai`
+(`https://registry.modelcontextprotocol.io/v0/servers?search=cz.volai`).
+Report problems to `podpora@volai.cz`.
 
 ## More
 
